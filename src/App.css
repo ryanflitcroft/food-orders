@@ -34,3 +34,12 @@ img {
   box-shadow: 0.25em 0.25em 0.5em var(--color1),
               -0.15em -0.15em 0.25em var(--color2);
 }
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+select {
+  margin: 1em;
+}

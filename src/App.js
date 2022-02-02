@@ -11,7 +11,8 @@ function App() {
     sideId, setSideId,
     drinkId, setDrinkId,
     orderName, setOrderName,
-    instructions, setInstructions
+    instructions, setInstructions,
+    menu, setMenu
   } = useAppState();
 
   return (
@@ -21,7 +22,7 @@ function App() {
         sideId={sideId} setSideId={setSideId}
         drinkId={drinkId} setDrinkId={setDrinkId}
         orderName={orderName} setOrderName={setOrderName}
-        instructions={instructions} setInstructions={setInstructions} />
+        instructions={instructions} setInstructions={setInstructions} menu={menu} setMenu={setMenu} />
       <Footer />
     </>
 

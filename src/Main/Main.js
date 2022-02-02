@@ -11,12 +11,12 @@ export default function Main({ entreeId,
   orderName,
   setOrderName,
   instructions,
-  setInstructions }) {
+  setInstructions, menu }) {
   return (
     <main>
       <OrderImages entreeId={entreeId} 
         sideId={sideId}
-        drinkId={drinkId} />
+        drinkId={drinkId} menu={menu} />
       <OrderForm setEntreeId={setEntreeId}
         setSideId={setSideId}
         setDrinkId={setDrinkId}
