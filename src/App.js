@@ -1,24 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
+import Header from './Header/Header';
+import Main from './Main/Main';
+import Footer from './Footer/Footer';
+import useAppState from './useAppState';
 
 function App() {
+  const {
+    entreeId, setEntreeId,
+    sideId, setSideId,
+    drinkId, setDrinkId,
+    orderName, setOrderName,
+    instructions, setInstructions,
+    menu
+  } = useAppState();
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main entreeId={entreeId} setEntreeId={setEntreeId}
+        sideId={sideId} setSideId={setSideId}
+        drinkId={drinkId} setDrinkId={setDrinkId}
+        orderName={orderName} setOrderName={setOrderName}
+        instructions={instructions} setInstructions={setInstructions} 
+        menu={menu} />
+      <Footer />
+    </>
+
   );
 }
 
