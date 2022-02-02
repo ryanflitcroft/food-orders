@@ -1,0 +1,36 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --color1: #3d3d3d;
+  --color2: #d3d3d3;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+main section {
+  display: flex;
+  justify-content: center;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+  margin: 0 0 1em;
+  border: 0.5em solid whitesmoke;
+  box-shadow: 0.25em 0.25em 0.5em var(--color1),
+              -0.15em -0.15em 0.25em var(--color2);
+}
