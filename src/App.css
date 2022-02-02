@@ -7,6 +7,11 @@ body {
   --color2: #d3d3d3;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+}
+
 main {
   display: flex;
   flex-direction: column;
