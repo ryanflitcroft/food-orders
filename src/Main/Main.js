@@ -11,12 +11,15 @@ export default function Main({ entreeId,
   orderName,
   setOrderName,
   instructions,
-  setInstructions, menu }) {
+  setInstructions, 
+  menu }) {
   return (
     <main>
+      <h2>Order for {orderName}</h2>
       <OrderImages entreeId={entreeId} 
         sideId={sideId}
-        drinkId={drinkId} menu={menu} />
+        drinkId={drinkId} 
+        menu={menu} />
       <OrderForm setEntreeId={setEntreeId}
         setSideId={setSideId}
         setDrinkId={setDrinkId}

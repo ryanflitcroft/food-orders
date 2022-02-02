@@ -1,15 +1,9 @@
 import React from 'react';
 
-export default function OrderInput({ handleChange, type, options }) {
-
+export default function OrderInput({ handleChange }) {
   return (
     <>
-      <label htmlFor={type}>{type} Menu</label>
-      <select onChange={(e) => handleChange(e.target.value)}>
-        {options.map((option, i) =>
-          <option key={option, i} value={i + 1}>{option}</option>
-        )}
-      </select>
+      <input type="text" placeholder="Order Name" onChange={(e) => handleChange(e.target.value)}></input>
     </>
   );
 }

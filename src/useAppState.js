@@ -41,6 +41,7 @@ export default function useAppState() {
     sideId, setSideId,
     drinkId, setDrinkId,
     orderName, setOrderName,
-    instructions, setInstructions, menu, setMenu
+    instructions, setInstructions, 
+    menu, setMenu
   };
 }

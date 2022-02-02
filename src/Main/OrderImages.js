@@ -2,7 +2,8 @@ import React from 'react';
 
 export default function OrderImages({ entreeId,
   sideId,
-  drinkId, menu }) {
+  drinkId, 
+  menu }) {
 
   return (
     <section>
@@ -17,8 +18,6 @@ export default function OrderImages({ entreeId,
         <img src={!drinkId ? '../../assets/default.JPG' : `../../assets/drink-${drinkId}.JPG`} alt={menu.drink[ drinkId ]} />
         <figcaption>
           {menu.drink[ drinkId ]}
-          {console.log('||drinkmenu', menu.drink[ drinkId ])}
-
         </figcaption>
       </figure>
 
