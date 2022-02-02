@@ -24,7 +24,8 @@ export default function Main({ entreeId,
         setSideId={setSideId}
         setDrinkId={setDrinkId}
         setOrderName={setOrderName}
-        setInstructions={setInstructions} />
+        setInstructions={setInstructions}
+        instructions={instructions} />
     </main>
   );
 }

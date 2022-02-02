@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function OrderInput({ handleChange }) {
+export default function OrderInput({ setOrderName }) {
   return (
     <>
-      <input type="text" placeholder="Order Name" onChange={(e) => handleChange(e.target.value)}></input>
+      <input type="text" placeholder="Order Name" onChange={(e) => setOrderName(e.target.value)} required />
     </>
   );
 }
