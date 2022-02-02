@@ -19,6 +19,22 @@ main section {
   justify-content: center;
 }
 
+main div {
+  width: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 3em;
+}
+
+main div ol {
+  width: 250px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
 section.order-form {
   flex-direction: column;
 }
@@ -44,6 +60,14 @@ form {
   flex-direction: column;
 }
 
+input {
+  margin: 1em;
+}
+
 select {
   margin: 1em;
+}
+
+h2 {
+  margin: 1em 0 0;
 }

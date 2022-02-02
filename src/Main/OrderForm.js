@@ -12,6 +12,7 @@ export default function OrderForm({ setEntreeId,
 
   return (
     <section className="order-form">
+      <OrderInput setOrderName={setOrderName} />
       <OrderSelect handleChange={setEntreeId}
         type='Entrée'
         options={['Pad Thai', 'Plantain Bowl', 'Philly Cheese Steak', 'Jackfruit Bowl', 'Brussels Bowl', 'Wet Burrito', 'Impossible Burger', 'Açaí Bowl', 'Totchos']} />
@@ -21,7 +22,6 @@ export default function OrderForm({ setEntreeId,
       <OrderSelect handleChange={setSideId}
         type='Dessert'
         options={['Cupcake for 2', 'Neapolitan Cake', 'Portland Cream', 'Tiramisù Donut']} />
-      <OrderInput setOrderName={setOrderName} />
       <OrderInstructions instructions={instructions}
         setInstructions={setInstructions} />
     </section>
