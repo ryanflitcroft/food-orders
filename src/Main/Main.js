@@ -16,7 +16,6 @@ export default function Main({ entreeId,
   menu }) {
   return (
     <main>
-      <h1>🌱 Order Form 🌿</h1>
       <OrderImages entreeId={entreeId} 
         sideId={sideId}
         drinkId={drinkId} 
@@ -31,7 +30,6 @@ export default function Main({ entreeId,
           instructions={instructions} />
         <InstructionsList instructions={instructions} />
       </div>
-
     </main>
   );
 }
